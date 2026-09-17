@@ -1,0 +1,81 @@
+@import "../common.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.left{
+    background-color: #B0B9BC;
+    width: 710px;
+    position: relative;
+}
+
+/* logo */
+
+.logo{
+ display: flex;
+    gap: 12.1px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 113px;
+    color: white;
+}
+
+.logo img{
+  width: 49px;
+}
+
+.logo span{
+       font-size: 72px;
+}
+
+/* box-1 */
+
+.box-1{
+       display: inline-flex;
+    padding: 14.9px;
+    align-items: center;
+    gap: 12px;
+    background-color: #00000042;
+    color: white;
+    /* margin-left: 18px; */
+    /* margin-top: 134px; */
+    position: absolute;
+    top: 15rem;
+    left: 3rem;
+    border-radius: 14.86px;
+}
+
+.box-1 i{
+      font-size: 42px;
+}
+
+
+.qualified-text{
+     flex-direction: column;
+    gap: 2.48px;
+}
+.box-1 h5{
+  font-size: 22.34px;
+}
+
+.box-1 p{
+font-size: 19.86px;
+    color: #ffffffa6;
+}
+
+
+
+
+.book{
+    
+    position: absolute;
+    top: 44rem;
+    left: 25rem;
+    
+}
+
+
