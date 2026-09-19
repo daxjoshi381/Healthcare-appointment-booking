@@ -1,0 +1,199 @@
+@import "../common.css";
+
+.nav-bar{
+    border-bottom: 1px solid #E3E3E3;
+    padding: 2rem; 
+}
+
+.nav-bar .left{
+    gap: 5.28px;
+    color: #3B9AB8;
+    font-size: 31.7px;
+}
+
+.nav-bar .left img{
+        width: 21.8px;
+    height: 28.4px;
+}
+
+.nav-bar .right{
+    gap: 15px;
+}
+
+.nav-bar .right a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #3B9AB8;
+}
+
+.nav-bar .right .btn-reg{
+    border: none;
+    background: #3B9AB8;
+    padding: 14px 12px;
+    gap: 10px;
+    display: flex;
+    width: 215px;
+    justify-content: center;
+    height: 46px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.nav-bar .right .btn-reg:hover{
+    color: #3B9AB8;
+    background-color: black;
+}
+
+
+.container{
+     width: 100%;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+
+
+section .banner{
+    width: 100%;
+    height: 262px;
+    background-image: url(./desbord.png);
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4rem;
+    border-radius: 16px;
+    position: relative;
+}
+
+.content{
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 24px;
+    padding-left: 30px;
+    width: 442px;
+    color: white;
+}
+
+.content .title{
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content .title h1{
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.content .title p{
+    font-size: 20px;
+}
+
+.content .doctor-online{
+    gap: 14px;
+}
+
+.dr-img{
+    position: absolute;
+    bottom: -4px;
+    left: 853px;
+}
+
+.search-bar{
+    position: absolute;
+    left: 25rem;
+    bottom: -3rem;
+    background-color: white;
+    padding: 20px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.left-input{
+    gap: 4px;
+    color: #7A7D84;
+}
+
+.left-input i{
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.left-input input{
+   border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.right-input{
+    gap: 20px;
+    border-left: 1px solid #E5E5E5;
+    margin-left: 5rem;
+    padding-left: 20px;
+}
+
+.right-input .location-input{
+    gap: 4px;
+    color: #7A7D84;
+}
+
+.right-input .location-input i{
+    cursor: pointer;
+}
+
+.right-input .location-input input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.settings-icon{
+    font-size: 17.5px;
+}
+
+.search-btn{
+    border: none;
+    background-color: #3B9AB8;
+    padding: 10px 12px;
+    display: flex;
+    gap: 10px;
+    width: 113px;
+    justify-content: center;
+    height: 37px;
+    border-radius: 6px;
+    color: white;
+    transition: all .3s ease;
+}
+
+.search-btn:hover{
+    color: #3B9AB8;
+    background-color: black;
+}
+
+
+.dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2f9bb5;
+}
+
+.dots span:nth-child(2) {
+    background: #5fc9c3;
+}
+
+.dots span:nth-child(3) {
+    background: #8dded0;
+}
