@@ -1,199 +1,346 @@
 @import "../common.css";
 
-.nav-bar{
-    border-bottom: 1px solid #E3E3E3;
-    padding: 2rem; 
+.nav-bar {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 2rem;
 }
 
-.nav-bar .left{
-    gap: 5.28px;
-    color: #3B9AB8;
-    font-size: 31.7px;
+.nav-bar .left {
+  gap: 5.28px;
+  color: #3b9ab8;
+  font-size: 31.7px;
 }
 
-.nav-bar .left img{
-        width: 21.8px;
-    height: 28.4px;
+.nav-bar .left img {
+  width: 21.8px;
+  height: 28.4px;
 }
 
-.nav-bar .right{
-    gap: 15px;
+.nav-bar .right {
+  gap: 15px;
 }
 
-.nav-bar .right a{
-    text-decoration: none;
-    font-size: 16px;
-    color: #3B9AB8;
+.nav-bar .right a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3b9ab8;
 }
 
-.nav-bar .right .btn-reg{
-    border: none;
-    background: #3B9AB8;
-    padding: 14px 12px;
-    gap: 10px;
-    display: flex;
-    width: 215px;
-    justify-content: center;
-    height: 46px;
-    border-radius: 6px;
-    font-size: 16px;
-    color: white;
-    transition: all .3s ease;
-    cursor: pointer;
+.nav-bar .right .btn-reg {
+  border: none;
+  background: #3b9ab8;
+  padding: 14px 12px;
+  gap: 10px;
+  display: flex;
+  width: 215px;
+  justify-content: center;
+  height: 46px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.nav-bar .right .btn-reg:hover{
-    color: #3B9AB8;
-    background-color: black;
+.nav-bar .right .btn-reg:hover {
+  color: #3b9ab8;
+  background-color: black;
 }
 
-
-.container{
-     width: 100%;
+.container {
+  width: 100%;
   max-width: 1270px;
   margin: 0 auto;
   padding: 0 15px;
-
 }
 
-
-section .banner{
-    width: 100%;
-    height: 262px;
-    background-image: url(./desbord.png);
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 4rem;
-    border-radius: 16px;
-    position: relative;
+section .banner {
+  width: 100%;
+  height: 262px;
+  background-image: url(./desbord.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  border-radius: 16px;
+  position: relative;
 }
 
-.content{
-    flex-direction: column;
-    gap: 24px;
-    padding-top: 24px;
-    padding-left: 30px;
-    width: 442px;
-    color: white;
+.content {
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+  padding-left: 30px;
+  width: 442px;
+  color: white;
 }
 
-.content .title{
-    flex-direction: column;
-    gap: 12px;
+.content .title {
+  flex-direction: column;
+  gap: 12px;
 }
 
-.content .title h1{
-    font-size: 30px;
-    line-height: 150%;
+.content .title h1 {
+  font-size: 30px;
+  line-height: 150%;
 }
 
-.content .title p{
-    font-size: 20px;
+.content .title p {
+  font-size: 20px;
 }
 
-.content .doctor-online{
-    gap: 14px;
+.content .doctor-online {
+  gap: 14px;
 }
 
-.dr-img{
-    position: absolute;
-    bottom: -4px;
-    left: 853px;
+.dr-img {
+  position: absolute;
+  bottom: -4px;
+  left: 853px;
 }
 
-.search-bar{
-    position: absolute;
-    left: 25rem;
-    bottom: -3rem;
-    background-color: white;
-    padding: 20px 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+.search-bar {
+  position: absolute;
+  left: 25rem;
+  bottom: -3rem;
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
-.left-input{
-    gap: 4px;
-    color: #7A7D84;
+.left-input {
+  gap: 4px;
+  color: #7a7d84;
 }
 
-.left-input i{
-   font-size: 16px;
-   cursor: pointer;
+.left-input i {
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.left-input input{
-   border: none;
-    outline: none;
-    font-size: 14px;
-    line-height: 18px;
+.left-input input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.right-input{
-    gap: 20px;
-    border-left: 1px solid #E5E5E5;
-    margin-left: 5rem;
-    padding-left: 20px;
+.right-input {
+  gap: 20px;
+  border-left: 1px solid #e5e5e5;
+  margin-left: 5rem;
+  padding-left: 20px;
 }
 
-.right-input .location-input{
-    gap: 4px;
-    color: #7A7D84;
+.right-input .location-input {
+  gap: 4px;
+  color: #7a7d84;
 }
 
-.right-input .location-input i{
-    cursor: pointer;
+.right-input .location-input i {
+  cursor: pointer;
 }
 
-.right-input .location-input input{
-    border: none;
-    outline: none;
-    font-size: 14px;
-    line-height: 18px;
+.right-input .location-input input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.settings-icon{
-    font-size: 17.5px;
+.settings-icon {
+  font-size: 17.5px;
 }
 
-.search-btn{
-    border: none;
-    background-color: #3B9AB8;
-    padding: 10px 12px;
-    display: flex;
-    gap: 10px;
-    width: 113px;
-    justify-content: center;
-    height: 37px;
-    border-radius: 6px;
-    color: white;
-    transition: all .3s ease;
+.search-btn {
+  border: none;
+  background-color: #3b9ab8;
+  padding: 10px 12px;
+  display: flex;
+  gap: 10px;
+  width: 113px;
+  justify-content: center;
+  height: 37px;
+  border-radius: 6px;
+  color: white;
+  transition: all 0.3s ease;
 }
 
-.search-btn:hover{
-    color: #3B9AB8;
-    background-color: black;
+.search-btn:hover {
+  color: #3b9ab8;
+  background-color: black;
 }
-
 
 .dots {
-    display: flex;
-    gap: 8px;
-    margin-top: 5rem;
-    cursor: pointer;
+  display: flex;
+  gap: 8px;
+  margin-top: 8rem;
+  cursor: pointer;
 }
 
 .dots span {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #2f9bb5;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2f9bb5;
 }
 
 .dots span:nth-child(2) {
-    background: #5fc9c3;
+  background: #5fc9c3;
 }
 
 .dots span:nth-child(3) {
-    background: #8dded0;
+  background: #8dded0;
+}
+
+.recommended-doctors {
+  margin-top: 4rem;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-header a {
+  text-decoration: none;
+    color: #3b9ab8;
+}
+
+.doctor-list {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-gap: 16px;
+}
+
+.doctor-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 20px 30px 20px 20px;
+}
+
+.card-content {
+  display: flex;
+  /* padding: 20px; */
+  flex-direction: column;
+  gap: 16px;
+}
+
+.img-top {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+  margin-bottom: 16px;
+}
+
+.img-top img {
+  object-fit: contain;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.time-price {
+  display: flex;
+  gap: 16px;
+}
+
+.time {
+  display: flex;
+  gap: 8px;
+}
+
+.time img {
+  width: 16.5px;
+  height: 16.5px;
+}
+
+.time-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.time-content h4 {
+  font-size: 14px;
+  color: #232323;
+}
+
+.time-content p {
+  font-size: 12px;
+  color: #7a7d84;
+}
+
+.price {
+  display: flex;
+  gap: 8px;
+  border-left: 1px solid #e5e5e5;
+  padding-left: 16px;
+  margin-left: 16px;
+}
+
+.price img {
+  width: 16.5px;
+  height: 16.5px;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #2f9bb5;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.btn-book {
+  border: none;
+  background: none;
+  font-size: 14px;
+}
+
+
+.Nearby-Doctors h2{
+  margin-bottom: 20px;
+}
+
+.location-card{
+        border: 1px solid #00000012;
+    border-radius: 10px;
+}
+
+.location-heding{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 10px;
+    gap: 12px;
+}
+
+.location-heding i{
+  font-size: 31.5px;
+}
+
+.location-heding p{
+  font-size: 14px;
+}
+
+.location-heding p button{
+  border: none;
+    background: none;
+    color: #3b9ab8;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+.doctors-section{
+   display: flex;
+  flex-direction: column;
+    gap: 38px;
+    margin-bottom: 3rem;
 }
