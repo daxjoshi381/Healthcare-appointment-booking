@@ -1,0 +1,640 @@
+@import "../common.css";
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  margin-left: 16rem;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.welcome-text {
+  color: #777777;
+}
+
+.search-bar {
+  background: #eeeeee;
+  padding: 8px 8px 8px 16px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.left-input {
+  color: #7a7d84;
+}
+
+.right-input {
+  gap: 20px;
+  border-left: 1px solid #e5e5e5;
+  padding-left: 20px;
+}
+
+.right-input .location-input {
+  color: #7a7d84;
+}
+
+.search-btn {
+  padding: 8px 12px;
+  display: flex;
+  gap: 10px;
+  background-color: #3b9ab8;
+  border: none;
+  color: white;
+  width: 82px;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  color: #3b9ab8;
+  background-color: #292929;
+}
+
+.header-right {
+  gap: 20px;
+}
+
+.profile {
+  gap: 15px;
+  padding-right: 2rem;
+}
+
+section .banner {
+  background-image: url(../assets/img/desbord.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -2rem;
+  border-radius: 16px;
+  position: relative;
+}
+
+.content {
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+  padding-left: 30px;
+  width: 442px;
+  color: white;
+}
+
+.content .title {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.content .title h1 {
+  font-size: 30px;
+  line-height: 150%;
+}
+
+.content .title p {
+  font-size: 20px;
+}
+
+.content .doctor-online {
+  gap: 14px;
+}
+
+.dr-img {
+  position: absolute;
+  bottom: -4px;
+  left: 853px;
+}
+
+/* slide */
+
+.logo {
+  gap: 5.28px;
+  color: #3b9ab8;
+  font-size: 31.7px;
+  margin-bottom: 77px;
+}
+
+.logo img {
+  width: 21.8px;
+  height: 28.4px;
+}
+
+.sidebar {
+  padding: 2rem;
+  border-right: 1px solid #e3e3e3;
+  width: 239px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1099px;
+  margin-top: -5rem;
+}
+
+.sidebar-menu {
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 263px;
+}
+
+.sidebar-bottom {
+  position: relative;
+}
+
+.menu-item {
+  gap: 12px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  padding: 10px;
+  color: #7e7e7e;
+}
+
+.active {
+  background: #3b9ab8;
+  padding-left: 1rem;
+  color: white;
+  font-size: 16px;
+  width: 191px;
+  height: 48px;
+}
+
+.pro-card {
+  margin-left: 42px;
+  border-radius: 70% 70% -6px 40px;
+  background: black;
+  border-radius: 50px 50px 2% 0;
+  text-align: center;
+  color: white;
+  background: #292929;
+  border-radius: 100px 100px 0 0;
+  padding: 35px 15px 18px;
+  width: 188px;
+  text-align: center;
+  position: absolute;
+  left: -15px;
+  bottom: -83px;
+}
+
+.pro-button {
+  border: none;
+  width: 159px;
+  padding: 9px 12px;
+  margin-top: 1rem;
+  background-color: #3b9ab8;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main dashboard */
+.dashboard-content {
+  margin-left: 16rem;
+  
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  grid-template-areas:
+    "banner appointments"
+    "nearby appointments"
+    "recommended recommended";
+  gap: 10px 12px;
+  margin-top: -63rem;
+}
+
+/* banner */
+
+section .banner {
+  width: 100%;
+  height: 262px;
+  background-image: url(../assets/img/desbord.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  border-radius: 16px;
+  position: relative;
+}
+
+.content {
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+  padding-left: 30px;
+  width: 442px;
+  color: white;
+}
+
+.content .title {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.content .title h1 {
+  font-size: 30px;
+  line-height: 150%;
+}
+
+.content .title p {
+  font-size: 20px;
+}
+
+.content .doctor-online {
+  gap: 14px;
+}
+
+.dr-img {
+  position: absolute;
+  bottom: -4px;
+  left: 419px;
+}
+
+.dr-img img {
+  width: 325px;
+  height: 250px;
+}
+
+/* dots */
+
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-top: -5rem;
+  cursor: pointer;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2f9bb5;
+}
+
+.dots span:nth-child(2) {
+  background: #5fc9c3;
+}
+
+.dots span:nth-child(3) {
+  background: #8dded0;
+}
+
+/* Appointments */
+
+
+.appointments-card {
+  grid-area: appointments;
+  min-width: 0;
+  padding: 24px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  background: #fff;
+  margin-top: 2rem;
+  width: 498px;
+}
+
+.appointments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.appointments-header h2 {
+  font-size: clamp(18px, 2vw, 34px);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.view-all {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #339bb8;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.view-all span {
+  font-size: 26px;
+}
+
+/* Calendar */
+
+.calendar {
+  padding: 17px 16px;
+  background: #f5f5f5;
+  border-radius: 12px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.month-navigation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.month-navigation h3 {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.month-navigation button {
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.collapse-btn {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.collapse-btn span {
+  display: block;
+  padding: 5px;
+  border-top: 3px solid #111;
+  border-left: 3px solid #111;
+  transform: rotate(45deg);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  text-align: center;
+}
+
+.weekdays {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.weekdays div {
+  padding-bottom: 6px;
+}
+
+.dates {
+  align-items: center;
+}
+
+.dates div {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  aspect-ratio: 1;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+.dates .empty {
+  visibility: hidden;
+}
+
+.dates .selected {
+  background: #339bb8;
+  color: white;
+  font-weight: 600;
+}
+
+/* Empty State */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 38px;
+}
+
+.empty-state p {
+  color: #555;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Calendar Icon */
+
+.calendar-icon {
+  position: relative;
+  padding: 18px 28px;
+  border: 5px solid #339bb8;
+  border-radius: 7px;
+}
+
+.calendar-ring {
+  position: absolute;
+  top: -15px;
+  padding: 11px 2px;
+  background: #339bb8;
+}
+
+.ring-one {
+  left: 9px;
+}
+
+.ring-two {
+  right: 9px;
+}
+
+.calendar-line {
+  position: absolute;
+  padding: 2px 7px;
+  background: #339bb8;
+}
+
+.line-one {
+  top: 17px;
+  left: 8px;
+}
+
+.line-two {
+  top: 17px;
+  right: 8px;
+}
+
+.line-three {
+  top: 30px;
+  left: 8px;
+}
+
+/* Nearby-Doctors */
+
+.Nearby-Doctors {
+  margin-top: -14rem;
+}
+
+.Nearby-Doctors h2 {
+  margin-bottom: 20px;
+}
+
+.location-card {
+  border: 1px solid #00000012;
+  border-radius: 10px;
+  height: 134px;
+}
+
+.location-heding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 10px;
+  gap: 12px;
+}
+
+.location-heding i {
+  font-size: 31.5px;
+}
+
+.location-heding p {
+  font-size: 14px;
+}
+
+.location-heding p button {
+  border: none;
+  background: none;
+  color: #3b9ab8;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+.doctors-section {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  margin-bottom: 3rem;
+}
+
+/* Recommended doctors */
+
+.recommended-doctors {
+  margin-left: -47rem;
+  width: 1253px;
+  border: 1px solid #e5e5e5;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-header a {
+  text-decoration: none;
+  color: #3b9ab8;
+}
+
+.doctor-list {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-gap: 16px;
+}
+
+.doctor-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 20px 30px 20px 20px;
+}
+
+.card-content {
+  display: flex;
+  /* padding: 20px; */
+  flex-direction: column;
+  gap: 16px;
+}
+
+.img-top {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 25px;
+  margin-bottom: 16px;
+}
+
+.img-top img {
+  object-fit: contain;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.time-price {
+  display: flex;
+  gap: 16px;
+}
+
+.time {
+  display: flex;
+  gap: 8px;
+}
+
+.time img {
+  width: 16.5px;
+  height: 16.5px;
+}
+
+.time-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.time-content h4 {
+  font-size: 14px;
+  color: #232323;
+}
+
+.time-content p {
+  font-size: 12px;
+  color: #7a7d84;
+}
+
+.price {
+  display: flex;
+  gap: 8px;
+  border-left: 1px solid #e5e5e5;
+  padding-left: 16px;
+  margin-left: 16px;
+}
+
+.price img {
+  width: 16.5px;
+  height: 16.5px;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #2f9bb5;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.btn-book {
+  border: none;
+  background: none;
+  font-size: 14px;
+}
