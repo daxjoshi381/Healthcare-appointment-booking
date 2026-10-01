@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive design ke liye -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareFlow - Appointment History</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="../assets/img/color-logo.png" alt="">
+                <span>Healthi</span>
+            </div>
+
+            <nav class="main-nav">
+                <a href="#" class="nav-link active">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Calendar</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>Help</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+
+            <!-- PRO PROMO -->
+            <div class="promo">
+                <img src="../assets/img/get-faster.png" alt="">
+                <div class="promo-message">
+                    <p>Get faster<br>and better<br>Healthcare</p>
+                    <button type="button">Go Pro</button>
+                </div>
+            </div>
+        </aside>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <main class="main">
+
+            <!-- HEADER -->
+
+            <header class="top-header">
+                <div class="welcome">
+                    <p>Hi, Steven dux</p>
+                    <h1>Profile</h1>
+                </div>
+
+                <div class="header-actions">
+                    <button class="language" type="button">
+                        EN <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <button class="notification" type="button">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <div class="user-mini">
+                        <img src="../assets/img/user.png" alt="User">
+                        <span>Steven dux</span>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- =========================
+                 PAGE
+            ========================== -->
+
+            <div class="page">
+
+                <!-- Secondary navigation -->
+
+                <aside class="sub-navigation">
+
+                    <a href="#">
+                        Overview
+                    </a>
+
+                    <a href="#" class="selected">
+                        Consultation History
+                    </a>
+
+
+                </aside>
+
+
+                <!-- =========================
+                     HISTORY CONTENT
+                ========================== -->
+
+                <section class="history">
+
+                    <!-- History header -->
+
+                    <div class="history-header">
+
+                        <h2>Consultation History</h2>
+
+                        <div class="history-actions">
+
+                            <button class="month-button">
+                                June 2026
+
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+
+                            <button class="appointment-button">
+                                <i class="fa-solid fa-plus"></i>
+
+                                New appointment
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         TODAY
+                    ========================== -->
+
+                    <div class="history-section">
+
+                        <h3>Today</h3>
+
+
+                        <div class="appointment-grid">
+
+
+                            <!-- Appointment 1 -->
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Esther Howard.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Esther Howard
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    7:00am - 8:00am
+                                </div>
+
+                            </article>
+
+
+                            <!-- Appointment 2 -->
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Cameron Williamson.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Cameron Williamson
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    10:00am - 11:00am
+                                </div>
+
+                            </article>
+
+
+                            <!-- Appointment 3 -->
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Guy Hawkins.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Guy Hawkins
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                   12:00pm - 1:00pm
+                                </div>
+
+                            </article>
+
+
+                            <!-- Appointment 4 -->
+
+                           <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Albert Flores.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Albert Flores
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    04:00 PM - 05:00 PM
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         YESTERDAY
+                    ========================== -->
+
+                    <div class="history-section">
+
+                        <h3>Yesterday</h3>
+
+
+                        <div class="vertical-list">
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Jane Cooper.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Jane Cooper
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    7:00am - 8:00am
+                                </div>
+
+                            </article>
+
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Brooklyn Simmons.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                           Brooklyn Simmons
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    10:00am - 11:00am
+                                </div>
+
+                            </article>
+
+
+                           <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Cody Fisher.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Leslie Alexander
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    12:00pm - 1:00pm
+                                </div>
+
+                            </article>
+
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Cody Fisher.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Ralph Edwards
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    04:00 PM - 05:00 PM
+                                </div>
+
+                            </article>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         PREVIOUS DATE
+                    ========================== -->
+
+                    <div class="history-section">
+
+                        <h3>28 May 2026</h3>
+
+
+                        <div class="appointment-grid">
+
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Jacob Jones.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Jacob Jones
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    7:00am - 8:00am
+                                </div>
+
+                            </article>
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Wade Warren.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                           Wade Warren
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    10:00am - 11:00am
+                                </div>
+
+                            </article>
+
+
+                            <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Cody Fisher.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Robert Fox
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    12:00pm - 1:00pm
+                                </div>
+
+                            </article>
+
+                           <article class="appointment-card">
+
+                                <div class="patient">
+                                    <div class="right-pat">
+                                        <div class="patient-avatar avatar-ten">
+                                            <img src="../assets/img/Cody Fisher.png" alt="">
+                                        </div>
+
+                                        <h3>
+                                            Cody Fisher
+                                        </h3>
+                                    </div>
+                                    <button class="document" aria-label="Open patient document">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="appointment-time">
+                                    04:00 PM - 05:00 PM
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,755 @@
+/* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background: #f7f9fa;
+
+  color: #202b36;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================================
+   MAIN DASHBOARD
+========================================= */
+
+.dashboard {
+  min-height: 100vh;
+
+  /*
+        Left sidebar
+        +
+        Remaining content
+    */
+
+  display: grid;
+
+  grid-template-columns: 245px minmax(0, 1fr);
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+/* LEFT SIDEBAR */
+.sidebar {
+  border: 1px solid #e3e3e3;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/* LOGO */
+.logo {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #329ab8;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.logo i {
+  font-size: 24px;
+}
+
+/* SIDEBAR NAVIGATION */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 22px;
+}
+
+.nav-link {
+  width: 195px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 19px;
+  border-radius: 6px;
+  color: #858585;
+  font-size: 16px;
+}
+
+.nav-link i {
+  width: 16px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.nav-link.active {
+  background: #329ab8;
+  color: #fff;
+}
+
+.nav-link:hover {
+  background: #eaf5f8;
+  color: #329ab8;
+}
+
+.nav-link.active:hover {
+  background: #329ab8;
+  color: #fff;
+}
+
+/* PRO PROMO */
+.promo {
+  width: 195px;
+  margin-top: 10rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS-BASED PERSON ILLUSTRATION */
+
+.promo-message {
+  position: absolute;
+  padding: 36px 15px 15px;
+  text-align: center;
+  color: #fff;
+  background: #292929;
+  border-radius: 100px 100px 5px 5px;
+  bottom: -6rem;
+  left: -1rem;
+}
+
+.promo-message p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.promo-message button {
+  width: 160px;
+  height: 38px;
+  margin-top: 10px;
+  color: #fff;
+  background: #329ab8;
+  border: 1px solid #1c839f;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main {
+  min-width: 0;
+
+  padding: 32px 38px 45px;
+}
+
+.top-header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.welcome p {
+  font-size: 20px;
+}
+
+.welcome h1 {
+  font-size: 32px;
+}
+
+.header-actions {
+  height: 42px;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #252525;
+}
+
+.language i {
+  font-size: 10px;
+}
+
+.notification {
+  position: relative;
+  width: 22px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 19px;
+}
+
+.user-mini {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-mini img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.notification .fa-bell {
+  color: #333;
+}
+
+/* ============= 
+   PAGE
+========================================= */
+
+.page {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  background: #ffffff;
+  border: 1px solid #e1e6e8;
+  border-radius: 14px;
+}
+
+/* =========================================
+   SECONDARY NAV
+========================================= */
+
+.sub-navigation {
+  padding: 22px 20px;
+
+  border-right: 1px solid #e2e6e8;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.sub-navigation a {
+  padding: 13px 15px;
+
+  border-radius: 8px;
+
+  color: #707983;
+
+  font-size: 13px;
+}
+
+.sub-navigation a:hover {
+  color: #299bb8;
+
+  background: #f2f7f8;
+}
+
+.sub-navigation a.selected {
+  color: #299bb8;
+
+  background: #f3f5f5;
+
+  font-weight: 500;
+}
+
+/* =========================================
+   HISTORY
+========================================= */
+
+.history {
+  min-width: 0;
+
+  padding: 20px 18px 30px;
+}
+
+/* History header */
+
+.history-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+.history-header h2 {
+  font-size: 22px;
+}
+
+.history-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Month */
+
+.month-button {
+  min-width: 125px;
+
+  padding: 10px 13px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid #6c7891;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #3e4a62;
+
+  font-size: 12px;
+}
+
+/* Appointment button */
+
+.appointment-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 17px;
+
+  border-radius: 8px;
+
+  background: #3a9fbc;
+
+  color: white;
+
+  font-size: 12px;
+}
+
+.appointment-button:hover {
+  background: #278da9;
+}
+
+/* =========================================
+   HISTORY SECTION
+========================================= */
+
+.history-section {
+  margin-bottom: 25px;
+}
+
+.history-section > h3 {
+  margin-bottom: 13px;
+
+  color: #252d34;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   APPOINTMENT GRID
+========================================= */
+
+.appointment-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+/* Appointment card */
+
+.appointment-card {
+  padding: 8px;
+  border: 1px solid #e1e5e7;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Patient */
+
+.patient {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.patient strong {
+  font-size: 11px;
+}
+
+.right-pat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 127px;
+}
+
+.right-pat h3{
+    font-size: 7px;
+}
+
+
+
+/* Patient avatar */
+
+.patient-avatar {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* Different avatar colors */
+
+.avatar-one {
+  background: #e6f1df;
+  color: #57934a;
+}
+
+.avatar-two {
+  background: #e0eef2;
+  color: #34889b;
+}
+
+.avatar-three {
+  background: #f1e5e5;
+  color: #b15c5c;
+}
+
+.avatar-four {
+  background: #e4e8f5;
+  color: #5267a0;
+}
+
+.avatar-five {
+  background: #f3eadc;
+  color: #a07839;
+}
+
+.avatar-six {
+  background: #e5edf3;
+  color: #48788e;
+}
+
+.avatar-seven {
+  background: #eee2f1;
+  color: #80508e;
+}
+
+.avatar-eight {
+  background: #e1f2ed;
+  color: #438e78;
+}
+
+.avatar-nine {
+  background: #f4e7e7;
+  color: #a55757;
+}
+
+.avatar-ten {
+  background: #e5edf5;
+  color: #527a9a;
+}
+
+/* Card top */
+
+.card-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 7px;
+}
+
+/* Status */
+
+.status {
+  color: #8b959d;
+
+  font-size: 9px;
+}
+
+/* Document */
+
+.document {
+  color: #299bb8;
+
+  background: transparent;
+
+  font-size: 16px;
+}
+
+/* Time */
+
+.appointment-time {
+  margin-top: 8px;
+
+  padding: 9px;
+
+  border-radius: 6px;
+
+  background: #f5f6f6;
+
+  color: #3a9fbc;
+
+  font-size: 9px;
+}
+
+/* =========================================
+   VERTICAL HISTORY
+========================================= */
+
+.vertical-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.history-row {
+  min-height: 66px;
+
+  display: grid;
+
+  grid-template-columns: 1.2fr 1fr 1fr 30px;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 10px;
+
+  border: 1px solid #e3e7e9;
+
+  border-radius: 10px;
+}
+
+.visit-type {
+  color: #89939b;
+
+  font-size: 10px;
+}
+
+.time {
+  padding: 9px;
+
+  border-radius: 6px;
+
+  background: #f5f6f6;
+
+  color: #3a9fbc;
+
+  font-size: 9px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .dashboard {
+    grid-template-columns: 210px minmax(0, 1fr);
+  }
+
+  .main {
+    padding: 25px;
+  }
+
+  .page {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+
+  .appointment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 800px) {
+  .dashboard {
+    display: block;
+  }
+
+  .sidebar {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    border-right: none;
+    border-bottom: 1px solid #e4e8eb;
+
+    padding: 15px;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .main-nav {
+    flex-direction: row;
+
+    overflow-x: auto;
+  }
+
+  .nav-item {
+    flex-shrink: 0;
+  }
+
+  .promo-card {
+    display: none;
+  }
+
+  .main {
+    padding: 20px 15px;
+  }
+
+  .page {
+    display: block;
+  }
+
+  .sub-navigation {
+    flex-direction: row;
+
+    overflow-x: auto;
+
+    border-right: none;
+
+    border-bottom: 1px solid #e2e6e8;
+  }
+
+  .sub-navigation a {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .top-header {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .header-right {
+    gap: 12px;
+  }
+
+  .doctor div:last-child,
+  .language {
+    display: none;
+  }
+
+  .history-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .history-actions {
+    width: 100%;
+  }
+
+  .month-button,
+  .appointment-button {
+    flex: 1;
+  }
+
+  .appointment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-row {
+    grid-template-columns: 1fr 30px;
+
+    gap: 8px;
+  }
+
+  .visit-type,
+  .time {
+    grid-column: 1;
+  }
+
+  .history-row .document {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .heading h1 {
+    font-size: 23px;
+  }
+
+  .history {
+    padding: 15px;
+  }
+
+  .history-actions {
+    flex-direction: column;
+  }
+
+  .month-button,
+  .appointment-button {
+    width: 100%;
+  }
+}
