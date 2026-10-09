@@ -165,6 +165,9 @@ section .banner {
 
 .pro-card {
   margin-left: 42px;
+  border-radius: 70% 70% -6px 40px;
+  background: black;
+  border-radius: 50px 50px 2% 0;
   text-align: center;
   color: white;
   background: #292929;

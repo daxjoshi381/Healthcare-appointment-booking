@@ -1,0 +1,283 @@
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+      border-right: 1px solid #ababab63;
+    margin-right: 2rem;
+    height: 1024px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6rem;
+      margin-top: 2rem;
+  
+}
+
+.logo h2{
+      font-size: 31.7px;
+      color: #3a9fbc;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 16px;
+    width: 191px;
+}
+
+.side-menu button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  transition: all .3s ease;
+}
+
+.side-menu button:hover{
+    margin: 5px;
+}
+
+.side-menu button a {
+  text-decoration: none;
+  font-size: 16px;
+      color: #7E7E7E;
+    background: none;
+}
+
+.activ {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 1rem;
+ background: #3a9fbc;
+}
+
+.img-bottom {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.img-bottom img{
+  width: 80%;
+}
+
+.bottom-title {
+ background: black;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50% 50% 0px 0;
+    padding: 25px 10px 15px 10px;
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+}
+
+.btn-bott{
+  margin-top: 1rem;
+    padding: 9px 12px;
+    width: 159px;
+    height: 38px;
+}
+
+.top-heding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left p {
+  font-size: 20px;
+  color: #747474;
+}
+
+.left h2 {
+  font-size: 32px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right button {
+  border: none;
+  background: none;
+}
+
+.user-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.all-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.left-btn {
+  background: #eeeeee;
+  padding: 8px 12px;
+  display: flex;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+.left-btn .activ-left {
+  padding: 10px 24px;
+  border: none;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.left-btn button {
+  padding: 10px 24px;
+  border: none;
+  background: none;
+}
+
+.right-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.month-button {
+  padding: 10px 13px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid #6c7891;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #3e4a62;
+
+  font-size: 12px;
+}
+
+.appointment-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 17px;
+
+  border-radius: 8px;
+
+  background: #3a9fbc;
+
+  color: white;
+
+  font-size: 12px;
+}
+
+.appointment-button:hover {
+  background: #278da9;
+}
+
+.all-time {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.booking-detel {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  border: 1px solid #ababab63;
+  border-radius: 12px;
+}
+
+.date {
+  padding: 9px 20px;
+  display: flex;
+  border-radius: 12px;
+  padding-right: 90px;
+}
+
+.appointment-info {
+  display: flex;
+  gap: 60px;
+}
+
+.time-name {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.issue-link {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+}
+
+.calendar-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 20px;
+  border-radius: 12px;
+  background-color: #e5e5e5;
+}
+
+.line {
+  border-right: 1px solid #e5e5e5;
+  height: 68px;
+  padding-left: 32px;
+  margin-right: 32px;
+}
+
+.main-content{
+        flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+        padding: 1rem;
+}
+
+.des-bord{
+  display: flex;
+    background-color: #f8f9fa;
+}

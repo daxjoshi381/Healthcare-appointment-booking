@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard After Login first time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- - Header  -->
+    <header class="dashboard-header">
+
+        <!-- Welcome Text -->
+        <div class="welcome-section">
+            <p class="welcome-text">Hi, Stevan dux</p>
+            <h1 class="welcome-title">Welcome Back</h1>
+        </div>
+
+        <!-- Search Area -->
+        <div class="search-bar flex align-center">
+            <div class="left-input flex align-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Find doctors">
+            </div>
+
+            <div class="right-input flex align-center">
+                <div class="location-input flex align-center">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Location">
+                </div>
+
+                <div class="settings-icon">
+                    <i class="fa-solid fa-crosshairs"></i>
+                </div>
+
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+
+
+        <div class="header-right flex align-center">
+
+            <div class="language">
+                <span>EN</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="notification">
+                <img src="../assets/img/Bell.png" alt="">
+            </div>
+
+            <div class="profile flex align-center">
+                <img src="../assets/img/user.png" alt="">
+                <span>Stevan dux</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="sidebar">
+
+
+        <div class="logo flex align-center">
+            <img src="../assets/img/color-logo.png" alt="">
+            <span>Healthi</span>
+        </div>
+
+
+
+        <div class="sidebar-menu flex">
+
+            <button class="menu-item active flex align-center">
+                <img src="../assets/img/CirclesFour.png" alt="">
+                <span class="menu-text">Dashboard</span>
+            </button>
+
+            <button class="menu-item flex align-center">
+                <i class="fa-regular fa-calendar"></i>
+                <span class="menu-text">Calendar</span>
+            </button>
+
+            <button class="menu-item flex align-center">
+                <i class="fa-regular fa-circle-user"></i>
+                <span class="menu-text">Profile</span>
+            </button>
+
+            <button class="menu-item flex align-center">
+                <i class="fa-solid fa-circle-question"></i>
+                <span class="menu-text">Help</span>
+            </button>
+
+            <button class="menu-item flex align-center">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span class="menu-text">Logout</span>
+            </button>
+
+        </div>
+
+
+
+        <div class="sidebar-bottom">
+
+            <div class="doctor-image">
+                <img src="../assets/img/get-faster.png" alt="Doctor">
+            </div>
+
+            <div class="pro-card">
+
+                <p class="pro-title">
+                    Get faster<br>
+                    and better<br>
+                    Healthcare
+                </p>
+
+                <button class="pro-button">
+                    Go Pro
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <section class="dashboard-content">
+
+        <div class="dashboard-grid">
+
+            <!-- Banner -->
+            <div class="banner">
+
+                <div class="content flex">
+                    <div class="title flex">
+                        <h1>No need to visit local hospitals
+                            Get your consultation online</h1>
+                        <p>Audio/text/video/in-person</p>
+                    </div>
+
+                    <div class="doctor-online flex align-center">
+
+                        <img src="../assets/img/online-dr.png" alt="">
+
+                        <img src="../assets/img/online-dr (2).png" alt="" style="margin-left: -25px;">
+                        <img src="../assets/img/online-dr (3).png" alt="" style="margin-left: -25px;">
+
+                        <span>+180 doctors are online</span>
+                    </div>
+                </div>
+
+                <div class="dr-img">
+                    <img src="../assets/img/dash-dr.png" alt="">
+                </div>
+            </div>
+
+            <div class="dots container center">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Upcoming Appointments -->
+
+            <section class="appointments-card">
+
+                <!-- Header -->
+                <div class="appointments-header">
+                    <h2>Upcoming Appointments</h2>
+
+                    <a href="#" class="view-all">
+                        View All <span>›</span>
+                    </a>
+                </div>
+
+                <!-- Calendar -->
+                <div class="calendar">
+
+                    <div class="calendar-header">
+                        <div class="month-navigation">
+                            <h3>June 2023</h3>
+                            <button aria-label="Previous month">‹</button>
+                            <button aria-label="Next month">›</button>
+                        </div>
+
+                        <button class="collapse-btn" aria-label="Collapse">
+                            <span></span>
+                        </button>
+                    </div>
+
+                    <!-- Weekdays -->
+                    <div class="calendar-grid weekdays">
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                        <div>Sun</div>
+                    </div>
+
+                    <!-- Dates -->
+                    <div class="calendar-grid dates">
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
+                        <div class="selected">14</div>
+                        <div>15</div>
+                        <div>16</div>
+                        <div>17</div>
+                        <div>18</div>
+                        <div>19</div>
+                        <div>20</div>
+                        <div>21</div>
+                        <div class="selected">22</div>
+                        <div>23</div>
+                        <div>24</div>
+                        <div>25</div>
+                        <div>26</div>
+                        <div>27</div>
+                        <div>28</div>
+                        <div>29</div>
+                        <div>30</div>
+                    </div>
+                </div>
+
+                <!-- Empty state -->
+                <div class="empty-state">
+                    <div class="calendar-icon">
+                        <span class="calendar-ring ring-one"></span>
+                        <span class="calendar-ring ring-two"></span>
+                        <span class="calendar-line line-one"></span>
+                        <span class="calendar-line line-two"></span>
+                        <span class="calendar-line line-three"></span>
+                    </div>
+
+                    <p>No upcoming appointments</p>
+                </div>
+
+            </section>
+
+            <!-- Nearby Doctors -->
+            <!-- <div class="Nearby-Doctors">
+                <div class="container">
+                    <div class="section-header flex space-between align-center">
+                        <h2 class="section-title">Nearby-Doctors</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-heding">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Please enable your location, so we can find nearby doctors <button> Enable Now</button>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Recommended Doctors -->
+
+            <div class="recommended-doctors">
+                <div class="section-header flex space-between align-center">
+                    <h2 class="section-title">Recommended Doctors</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+
+                <div class="doctor-list">
+
+                    <div class="doctor-card">
+                        <div class="card-content">
+                            <div class="img-top">
+                                <img src="../assets/img/Amanda Clara.png" alt="">
+                                <div class="top-content">
+                                    <h1>Amanda Clara</h1>
+                                    <p>specialist | 12 years experience</p>
+                                    <span>Padiatric</span>
+                                </div>
+                            </div>
+
+                            <div class="time-price">
+                                <div class="time">
+                                    <img src="../assets/img/time.png" alt="">
+                                    <div class="time-content">
+                                        <h4>Tue, Thu</h4>
+                                        <p>10:00 AM-01:00 PM</p>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <img src="../assets/img/dollar.png" alt="">
+                                    <div class="time-content">
+                                        <h4>$25</h4>
+                                        <p>Starting</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <button class="btn-book">Book an appointment</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="card-content">
+                            <div class="img-top">
+                                <img src="../assets/img/Jason shatsky.png" alt="">
+                                <div class="top-content">
+                                    <h1>Jason shatsky</h1>
+                                    <p>specialist | 10 years experience</p>
+                                    <span>Surgical</span>
+                                </div>
+                            </div>
+
+                            <div class="time-price">
+                                <div class="time">
+                                    <img src="../assets/img/time.png" alt="">
+                                    <div class="time-content">
+                                        <h4>Tue, Thu</h4>
+                                        <p>10:00 AM-01:00 PM</p>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <img src="../assets/img/dollar.png" alt="">
+                                    <div class="time-content">
+                                        <h4>$35</h4>
+                                        <p>Starting</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <button class="btn-book">Book an appointment</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="card-content">
+                            <div class="img-top">
+                                <img src="../assets/img/Jessie dux.png" alt="">
+                                <div class="top-content">
+                                    <h1>Jessie dux</h1>
+                                    <p>specialist | 7 years experience</p>
+                                    <span>Gastroentrology</span>
+                                </div>
+                            </div>
+
+                            <div class="time-price">
+                                <div class="time">
+                                    <img src="../assets/img/time.png" alt="">
+                                    <div class="time-content">
+                                        <h4>Tue, Thu</h4>
+                                        <p>10:00 AM-01:00 PM</p>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <img src="../assets/img/dollar.png" alt="">
+                                    <div class="time-content">
+                                        <h4>$15</h4>
+                                        <p>Starting</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <button class="btn-book">Book an appointment</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>

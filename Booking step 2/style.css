@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.left-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.left-name h2 {
+  color: #3b9ab8;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.right-section p {
+  color: #828282;
+}
+
+.btn-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-section a {
+  text-decoration: none;
+  color: #3b9ab8;
+}
+
+.btn-reg {
+  width: 215px;
+  padding: 14px 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #3b9ab8;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-reg:hover {
+  background-color: #20b0db;
+}
+
+.appointment-container {
+  background-color: #ffffff;
+  width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+  display: flex;
+  border: 1px solid #e1e8ed;
+  margin-top: 85px;
+  margin-left: 259px;
+}
+
+.details-section {
+  width: 40%;
+  padding: 40px;
+  border-right: 1px solid #e1e8ed;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid #e1e8ed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.doc-name {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.info-group p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.info {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.btn {
+  margin: 1rem 59rem;
+}
+
+.enter-section {
+  width: 55%;
+      padding: 55px 30px;
+}
+.enter-section h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.Patients-Name,
+.Contact-Number,
+.Problem {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+  }
+
+.enter-section h4 {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.Patients-Name input,
+.Contact-Number input {
+  width: 100%;
+  height: 36px;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  outline: none;
+  font-size: 12px;
+}
+
+.Patients-Name input:focus,
+.Contact-Number input:focus {
+  border-color: #3b9ab8;
+} 
+
+
+.Contact-Number input {
+  margin-top: 0;
+} 
+
+.Problem {
+  min-height: 65px;
+  border-bottom: 1px solid #e5e5e5;
+} 
+
+.payment-details {
+      margin-top: 18px;
+    margin-bottom: 130px;
+}
+
+.payment-details h4 {
+      font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+ display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 17px;
+    font-size: 14px;
+    color: #444;
+}
+
+.payment-option input {
+  accent-color: #3b9ab8;
+  cursor: pointer;
+}

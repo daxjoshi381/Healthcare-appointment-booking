@@ -175,7 +175,7 @@ section .banner {
 .dots {
   display: flex;
   gap: 8px;
-  margin-top: -7rem;
+  margin-top: 4rem;
   cursor: pointer;
 }
 

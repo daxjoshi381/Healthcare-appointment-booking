@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 1rem;
+}
+
+.des-bord {
+  display: flex;
+  background-color: #f8f9fa;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #ababab63;
+  margin-right: 2rem;
+  height: 1024px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+}
+
+.logo h2 {
+  font-size: 31.7px;
+  color: #3a9fbc;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 175px;
+  width: 191px;
+}
+
+.side-menu button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.side-menu button:hover {
+  margin: 5px;
+}
+
+.side-menu button a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #7e7e7e;
+  background: none;
+}
+
+.activ {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 1rem;
+  background: #3a9fbc;
+}
+
+.img-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.img-bottom img {
+  width: 80%;
+}
+
+.bottom-title {
+  background: black;
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50% 50% 0px 0;
+  padding: 25px 10px 15px 10px;
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+}
+
+.btn-bott {
+  margin-top: 1rem;
+  padding: 9px 12px;
+  width: 159px;
+  height: 38px;
+}
+
+.top-heding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left p {
+  font-size: 20px;
+  color: #747474;
+}
+
+.left h2 {
+  font-size: 32px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right button {
+  border: none;
+  background: none;
+}
+
+.user-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Consultation {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #dfdfdf;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.Consultation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Consultation-info h1 {
+  font-size: 24px;
+}
+
+.availability-section {
+  display: flex;
+  gap: 20px;
+}
+
+.availability {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 264px;
+}
+
+.Disable-enable {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.Disable {
+  display: flex;
+  gap: 8px;
+}
+
+.enable {
+  display: flex;
+  gap: 8px;
+}
+
+.type-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 264px;
+}
+
+.type-options {
+  display: flex;
+  gap: 33px;
+}
+
+.availability-option {
+  display: flex;
+  gap: 8px;
+}
+
+.Duration-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.duration-time {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding: 12px 16px;
+  width: 226px;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+.Fees-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.Fees-option {
+  display: flex;
+  border: 1px solid;
+  padding: 12px 16px;
+  width: 226px;
+  border-radius: 6px;
+}
+
+.btn-section {
+  display: flex;
+  gap: 17px;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 16px;
+  justify-content: flex-end;
+}
+
+.Cancel {
+  padding: 14px 18px;
+  width: 180px;
+  border-radius: 8px;
+}
+
+.Save {
+  padding: 14px 18px;
+  width: 180px;
+  border-radius: 8px;
+}

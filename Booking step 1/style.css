@@ -1,0 +1,211 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top{
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.left-name{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.left-name h2{
+ color: #3B9AB8;
+}
+
+.right-section{
+display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.right-section p{
+ color: #828282;
+}
+
+.btn-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-section a{
+text-decoration: none;
+    color: #3B9AB8;
+}
+
+.btn-reg{
+ width: 215px;
+    padding: 14px 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #3B9AB8;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.btn-reg:hover{
+  background-color: #20b0db;
+}
+
+
+.appointment-container {
+    background-color: #ffffff;
+    width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.09);
+    display: flex;
+    border: 1px solid #e1e8ed;
+    margin-top: 85px;
+    margin-left: 259px;
+}
+
+
+.details-section {
+    width: 40%;
+    padding: 40px;
+    border-right: 1px solid #e1e8ed;
+}
+
+.back-btn {
+    background: none;
+    border: 1px solid #e1e8ed;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.doc-name {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.info-group p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.info{
+    display:flex;
+    gap: 12px;
+    align-items: baseline;
+}
+
+.calendar-section {
+    width: 60%;
+    padding: 40px;
+}
+
+.calendar-section h3 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.month-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 0 20px;
+}
+
+.month-year {
+    font-weight: 600;
+    color: #333;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #666;
+}
+
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.day-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+}
+
+.day {
+    padding: 16px 20px;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+.day.selected {
+    background-color: #2b92be;
+    color: white;
+   border-radius: 50%;
+}
+
+/* Time Slots Styling */
+.time-section h4 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 15px;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.slot {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 10px 5px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.time{
+    border-color: #2b92be;
+}
+
+.slot:hover {
+    border-color: #2b92be;
+    color: #2b92be;
+}
+
+.btn{
+    margin: 1rem 59rem;
+}
