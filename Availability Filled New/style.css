@@ -1,0 +1,298 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+.line {
+  border-right: 1px solid #e5e5e5;
+  height: 68px;
+  padding-left: 32px;
+  margin-right: 32px;
+}
+
+.main-content{
+        flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+        padding: 1rem;
+}
+
+.des-bord{
+  display: flex;
+    background-color: #f8f9fa;
+}
+
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+      border-right: 1px solid #ababab63;
+   
+    height: 1024px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6rem;
+      margin-top: 2rem;
+  
+}
+
+.logo h2{
+      font-size: 31.7px;
+      color: #3a9fbc;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 175px;
+    width: 191px;
+}
+
+.side-menu button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  transition: all .3s ease;
+}
+
+.side-menu button:hover{
+    margin: 5px;
+}
+
+.side-menu button a {
+  text-decoration: none;
+  font-size: 16px;
+      color: #7E7E7E;
+    background: none;
+}
+
+.activ {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 1rem;
+ background: #3a9fbc;
+}
+
+.img-bottom {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.img-bottom img{
+  width: 80%;
+}
+
+.bottom-title {
+ background: black;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50% 50% 0px 0;
+    padding: 25px 10px 15px 10px;
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+}
+
+.btn-bott{
+  margin-top: 1rem;
+    padding: 9px 12px;
+    width: 159px;
+    height: 38px;
+}
+
+.top-heding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left p {
+  font-size: 20px;
+  color: #747474;
+}
+
+.left h2 {
+  font-size: 32px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right button {
+  border: none;
+  background: none;
+}
+
+.user-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Layout container for Left and Right alignment */
+.booking-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+/* --- LEFT SIDE: Calendar Styling --- */
+.calendar-section {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+    font-size: 18px;
+    color: #1a202c;
+}
+
+.calendar-header i {
+    color: #4a5568;
+    cursor: pointer;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #edf2f7;
+    border: 1px solid #edf2f7;
+}
+
+.day-label {
+    background: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+    color: #718096;
+    font-size: 14px;
+}
+
+.date-cell {
+    background: #ffffff;
+    min-height: 90px;
+    padding: 8px;
+    font-size: 14px;
+    color: #2d3748;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
+
+.date-cell.empty {
+    color: #a0aec0;
+}
+
+/* Badges styling inside calendar days */
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+    width: max-content;
+}
+
+.badge.blue {
+    background-color: #199fb1;
+    color: #ffffff;
+}
+
+.badge.gray {
+    background-color: #cbd5e0;
+    color: #4a5568;
+}
+
+/* --- RIGHT SIDE: Upcoming Cards Styling --- */
+.upcoming-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.upcoming-section h3 {
+    font-size: 18px;
+    color: #1a202c;
+    margin-bottom: 5px;
+}
+
+.time-group-title {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.clinic-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #f0f4f8;
+    height: 85px;
+}
+
+.card-info h4 {
+    font-size: 15px;
+    color: #1a202c;
+    margin-bottom: 4px;
+}
+
+.card-info p {
+    font-size: 12px;
+    color: #a0aec0;
+}
+
+.card-date {
+    font-size: 12px;
+    color: #cbd5e0;
+    white-space: nowrap;
+}
+
+
+.Days{
+  display: flex;
+    gap: 89px;
+    justify-content: center;
+    margin-bottom: 2rem
+}
+
+.number{
+  display: flex;
+    gap: 5px;
+    padding-top: 35px;
+}
