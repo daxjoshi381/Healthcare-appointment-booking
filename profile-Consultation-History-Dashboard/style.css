@@ -8,14 +8,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-
-  background: #f7f9fa;
-
-  color: #202b36;
-}
-
 button {
   font-family: inherit;
   cursor: pointer;
@@ -34,20 +26,12 @@ a {
 .dashboard {
   min-height: 100vh;
 
-  /*
-        Left sidebar
-        +
-        Remaining content
-    */
-
   display: grid;
 
   grid-template-columns: 245px minmax(0, 1fr);
 }
 
-/* =========================================
-   SIDEBAR
-========================================= */
+
 
 /* LEFT SIDEBAR */
 .sidebar {

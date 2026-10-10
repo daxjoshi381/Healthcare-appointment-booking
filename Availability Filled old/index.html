@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="des-bord">
+        <div class="side-bar">
+            <div class="logo">
+                <img src="../assets/img/color-logo.png" alt="">
+                <h2>Healthi</h2>
+            </div>
+
+            <div class="side-menu">
+                <button class="activ">
+                    <img src="../assets/img/CirclesFour.png" alt="">
+                    <a href="#" style="color: white;">Dasbord</a>
+                </button>
+
+                <button>
+                    <a href="#">Calendar</a>
+                </button>
+
+                <button>
+                    <a href="#">Profile</a>
+                </button>
+
+                <button>
+                    <a href="#">Help</a>
+                </button>
+
+                <button>
+                    <a href="#">Logout</a>
+                </button>
+            </div>
+
+            <div class="img-bottom">
+                <img src="../assets/img/get-faster.png" alt="">
+                <div class="bottom-title">
+                    <h3>Get faste <br>and better <br> Healthcare</h3>
+                    <button class="btn-bott">Go pro</button>
+                </div>
+            </div>
+        </div>
+        <main class="main-content">
+            <div class="top-heding">
+                <div class="left">
+                    <p>Hi, Stevan dux</p>
+                    <h2>My Availability</h2>
+
+                </div>
+                <div class="right">
+                    <button class="language" type="button">
+                        EN <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <button class="notification" type="button">
+                        <img src="../assets/img/Bell.png" alt="">
+                    </button>
+                    <div class="user-mini">
+                        <img src="../assets/img/user.png" alt="User">
+                        <span>Steven dux</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Main Layout Section for Calendar & Timeline -->
+            <div class="availability-section">
+
+                <!-- Top Row: Timeline Settings -->
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="month-selector">
+                            <h2>May 2023</h2>
+                            <div class="nav-arrows">
+                                <button class="arrow-btn disabled"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <button class="btn-mark-holidays">Mark Holidays</button>
+                    </div>
+
+                    <!-- Timeline Rows -->
+                    <div class="timeline-body">
+                        <!-- Row 1: Online -->
+                        <div class="timeline-row">
+                            <div class="row-label">Online</div>
+                            <div class="days-container">
+                                <span>1</span><span
+                                    class="highlight">2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span
+                                    class="active-blue">8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span
+                                    class="active-blue">14</span><span class="active-blue">15</span><span
+                                    class="active-blue">16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span
+                                    class="active-blue">31</span>
+                            </div>
+                            <button class="edit-row-btn"><i class="fa-solid fa-pencil"></i></button>
+                        </div>
+
+                        <!-- Row 2: Clinic 1 -->
+                        <div class="timeline-row">
+                            <div class="row-label">Clinic 1</div>
+                            <div class="days-container">
+                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span
+                                    class="active-blue">6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span
+                                    class="active-blue">19</span><span>20</span><span>21</span><span
+                                    class="active-blue">22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+                            </div>
+                            <button class="edit-row-btn"><i class="fa-solid fa-pencil"></i></button>
+                        </div>
+
+                        <!-- Row 3: Clinic 2 -->
+                        <div class="timeline-row">
+                            <div class="row-label">Clinic 2</div>
+                            <div class="days-container">
+                                <span>1</span><span>2</span><span
+                                    class="active-blue">3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span
+                                    class="active-blue">9</span><span>10</span><span
+                                    class="active-blue">11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span
+                                    class="active-blue">21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+                            </div>
+                            <button class="edit-row-btn"><i class="fa-solid fa-pencil"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row: Weekly Calendar Grid (Total 28 Days) -->
+                <div class="calendar-grid">
+                    <!-- Week Header Names -->
+                    <div class="grid-header">SUN</div>
+                    <div class="grid-header">MON</div>
+                    <div class="grid-header">TUE</div>
+                    <div class="grid-header">WED</div>
+                    <div class="grid-header">THUR</div>
+                    <div class="grid-header">FRI</div>
+                    <div class="grid-header">SAT</div>
+
+                    <!-- Row 1: Days 1 to 7 -->
+                    <div class="calendar-card">
+                        <span class="day-num">1</span>
+                        <div class="slot-tag online">Online</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">2</span>
+                        <div class="slot-tag clinic-1">Clinic 1</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">3</span>
+                        <div class="slot-tag clinic-2">Clinic 2</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">4</span>
+                        <div class="slot-tag clinic-4">Clinic 4</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">5</span>
+                        <div class="slot-tag online">Online</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">6</span>
+                        <div class="slot-tag clinic-2">Clinic 2</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">7</span>
+                        <div class="slot-tag online">Online</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+
+                    <!-- Row 2: Days 8 to 14 -->
+                    <div class="calendar-card">
+                        <span class="day-num">8</span>
+                        <div class="slot-tag clinic-1">Clinic 1</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card holiday-card">
+                        <span class="day-num">9</span>
+                        <div class="holiday-text">Holiday</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num current-day">10</span>
+                        <div class="slot-tag online">Online</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">11</span>
+                        <div class="slot-tag clinic-1">Clinic 1</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">12</span>
+                        <div class="slot-tag online">Online</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">13</span>
+                        <div class="slot-tag clinic-2">Clinic 2</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">14</span>
+                        <div class="slot-tag online">Online</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+
+                    <!-- Row 3: Days 15 to 21 -->
+                    <div class="calendar-card">
+                        <span class="day-num">15</span>
+                        <div class="slot-tag clinic-2">Clinic 2</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">16</span>
+                        <div class="slot-tag clinic-1">Clinic 1</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">17</span>
+                        <div class="slot-tag clinic-1">Clinic 1</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">18</span>
+                        <div class="slot-tag online">Online</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card holiday-card">
+                        <span class="day-num">19</span>
+                        <div class="holiday-text">Holiday</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">20</span>
+                        <div class="slot-tag online">Online</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                        <div class="time-slot">4:00-8:00 pm</div>
+                    </div>
+                    <div class="calendar-card">
+                        <span class="day-num">21</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+    </div>
+</body>
