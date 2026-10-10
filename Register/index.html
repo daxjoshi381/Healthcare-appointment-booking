@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Musaki</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div class="left-section">
+            <img src="../assets/img/Frame 5.png" alt="" class="bg-frame">
+            <img src="../assets/img/dr.png" alt="" class="dr-img">
+        </div>
+
+        
+        <div class="right-section">
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="login-box">
+                <div class="form-header">
+                    <h1>Hey there</h1>
+                    <p>Already know Musaki? <a href="#" class="signup-link">Log in</a></p>
+                </div>
+
+                <form>
+                   
+                    <div class="input-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" value="steve.madden@gmail.com" placeholder="Email address" required>
+                    </div>
+
+                    
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="phone-input-wrapper">
+                            <div class="country-code">
+                                <i class="fa-solid fa-flag-usa"></i>
+                                <span>+1</span>
+                                <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                            </div>
+                            <input type="tel" id="phone" value="1234567890" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+
+                    
+                    <div class="input-group password-group">
+                        <label for="password">Your password</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" value="•••••••••••••" required>
+                            <i class="fa-regular fa-eye eye-icon"></i>
+                        </div>
+                    </div>
+
+                    
+                    <div class="input-group">
+                        <label for="birthdate">Birth Date</label>
+                        <div class="date-input-wrapper">
+                            <input type="text" id="birthdate" value="23/03/1995" placeholder="DD/MM/YYYY" required>
+                            <i class="fa-regular fa-calendar calendar-icon"></i>
+                        </div>
+                    </div>
+
+                   
+                    <button type="submit" class="login-btn">Sign Up</button>
+
+                    
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                    </div>
+                </form>
+
+               
+                <div class="social-login">
+                    <p class="divider-text">Or sign up with</p>
+                    <div class="social-buttons">
+                        <button class="social-btn"><i class="fa-brands fa-google"></i></button>
+                        <button class="social-btn"><i class="fa-brands fa-facebook-f" ></i></button>
+                        <button class="social-btn"><i class="fa-brands fa-apple" ></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

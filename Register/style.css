@@ -1,0 +1,217 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+/* Left Section Styles */
+.left-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.dr-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+
+/* Right Section Styles */
+.right-section {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 460px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.form-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.signup-link {
+    color: #3b9ab8;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* Form Inputs Common Styles */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Phone Number Field Styling */
+.phone-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.country-code {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 12px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #cccccc;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.phone-input-wrapper input {
+    border: none !important;
+}
+
+/* Password and Date Wrappers */
+.input-wrapper, .date-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.eye-icon, .calendar-icon {
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+.input-group input:focus, .phone-input-wrapper:focus-within {
+    border-color: #3b9ab8;
+}
+
+/* Sign Up Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #3b9ab8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #2e7e98;
+}
+
+.form-options {
+    margin-top: 16px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.remember-me input {
+    width: 18px;
+    height: 18px;
+    accent-color: #3b9ab8;
+}
+
+/* Social Login Footer */
+.social-login {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.divider-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.social-btn:hover {
+    background-color: #f9f9f9;
+}
