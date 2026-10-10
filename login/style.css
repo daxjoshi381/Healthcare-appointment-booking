@@ -23,12 +23,15 @@ body {
     align-items: flex-end;
 }
 
+
 .dr-img {
     position: absolute;
     bottom: 0;
     left: 0;
     object-fit: contain;
 }
+
+
 
 /* Right Section Styles */
 .right-section {
