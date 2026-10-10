@@ -91,8 +91,8 @@ section .banner {
 }
 
 .content .title h1 {
-  font-size: 30px;
-  line-height: 150%;
+  font-size: 24px;
+
 }
 
 .content .title p {
@@ -233,10 +233,7 @@ section .banner {
   gap: 12px;
 }
 
-.content .title h1 {
-  font-size: 30px;
-  line-height: 150%;
-}
+
 
 .content .title p {
   font-size: 20px;

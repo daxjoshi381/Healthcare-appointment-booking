@@ -81,8 +81,7 @@ section .banner {
 }
 
 .content .title h1 {
-  font-size: 30px;
-  line-height: 150%;
+  font-size: 24px;
 }
 
 .content .title p {

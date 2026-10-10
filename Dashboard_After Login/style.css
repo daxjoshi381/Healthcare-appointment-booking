@@ -90,10 +90,6 @@ section .banner {
   gap: 12px;
 }
 
-.content .title h1 {
-  font-size: 30px;
-  line-height: 150%;
-}
 
 .content .title p {
   font-size: 20px;
@@ -237,8 +233,7 @@ section .banner {
 }
 
 .content .title h1 {
-  font-size: 30px;
-  line-height: 150%;
+      font-size: 24px;
 }
 
 .content .title p {
@@ -526,7 +521,7 @@ section .banner {
 /* Recommended doctors */
 
 .recommended-doctors {
-  margin-left: -47rem;
+ 
   width: 1253px;
   border: 1px solid #e5e5e5;
   padding: 1rem;
@@ -638,3 +633,5 @@ section .banner {
   background: none;
   font-size: 14px;
 }
+
+
